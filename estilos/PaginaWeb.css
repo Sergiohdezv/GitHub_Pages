@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; 
+} 
+
+
+#cabecera { 
+    background: #e3a63b; 
+    padding: 1px; 
+    text-align: center; 
+    position: relative; 
+} 
+ 
+
+#cabecera img { 
+    width: 50px; 
+    height: auto; 
+    display: inline-block; 
+    vertical-align: middle; 
+} 
+
+
+.texto-cabecera { 
+    display: inline-block; 
+    vertical-align: middle; 
+    margin-left: 20px; 
+} 
+
+
+#cabecera h1 { 
+    margin: 0; 
+    font-family: Impact, Arial Black, sans-serif; 
+    font-size: 32px; 
+    letter-spacing: 2px; 
+} 
+
+
+#cabecera h2 { 
+    margin: 0; 
+    font-family: "Courier New", Courier, monospace; 
+    font-size: 16px; 
+} 
+
+
+.menu { 
+    position: sticky; 
+    top: 0; 
+    background: #222; 
+    padding: 15px; 
+    z-index: 10; 
+} 
+
+
+.menu ul { 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    text-align: center; 
+} 
+
+
+.menu li { 
+    display: inline-block; 
+    margin: 0 20px; 
+} 
+
+
+.menu a { 
+    color: white; 
+    text-decoration: none; 
+    font-size: 18px; 
+} 
+
+
+.menu a:active { 
+    background: #e3a63b; 
+    color: #222; 
+    border-radius: 8px; 
+    padding: 5px 10px; 
+} 
+
+
+.menu a:hover { 
+    text-decoration: underline; 
+} 
+
+
+.fondo-parallax { 
+    position: relative; 
+    min-height: 100vh; 
+    overflow: hidden; 
+} 
+
+
+.fondo { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-image: url('../Imagenes/FONDO.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    opacity: 90%; 
+} 
+
+
+.contenido { 
+    position: relative; 
+    padding: 60px; 
+    text-align: center; 
+} 
+
+
+.tarjeta { 
+    width: 200px; 
+    height: 150px; 
+    border: 2px solid #ccc; 
+    border-radius: 6px; 
+    display: inline-block; 
+    margin: 30px; 
+    padding: 15px; 
+    position: relative; 
+    cursor: pointer; 
+    background-size: cover; 
+    background-position: center; 
+    font-family: Arial Black, sans-serif; 
+    font-size: 22px; 
+    letter-spacing: 1px; 
+} 
+
+
+.peliculas { 
+    background-image: url('../Imagenes/Películas/cartelPelicula.png'); 
+    color: white; 
+} 
+
+
+.peliculas:hover { 
+    background-image: url('../Imagenes/Películas/pelicula\ hd.jpg'); 
+} 
+
+
+.series { 
+    background-image: url('../Imagenes/Series/cartelSerie.png'); 
+} 
+
+
+.series:hover { 
+    background-image: url('../Imagenes/Series/hd.jpg'); 
+} 
+
+
+.nuevo { 
+    background-image: url('../Imagenes/desenfocadaañadidos.png'); 
+} 
+
+
+.nuevo:hover { 
+    background-image: url('../Imagenes/hdañadidos.jpg'); 
+} 
+
+
+.lista { 
+    background-image: url('../Imagenes/desenfocadalista.png'); 
+} 
+
+
+.lista:hover{ 
+    background-image: url('../Imagenes/hdlista.jpg'); 
+} 
+
+
+.seguir { 
+    background-image: url('../Imagenes/desenfoqueseguir.png'); 
+} 
+
+
+.seguir:hover{ 
+    background-image: url('../Imagenes/hdseguir.jpg'); 
+} 
+
+
+.paraTi { 
+    background-image: url('../Imagenes/desenfocadashrek.png'); 
+} 
+
+
+.paraTi:hover{ 
+    background-image: url('../Imagenes/hdshrek.jpg'); 
+} 
+
+
+.tarjeta h3 { 
+    position: absolute; 
+    color: white; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    text-shadow: 0 2px 6px rgba(0,0,0,0.9); 
+    font-size: 22px; 
+    top: 75%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    margin: 0; 
+    background: rgba(0,0,0,0.3); 
+    border-radius: 12px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4); 
+} 
+
+
+.tarjeta:hover { 
+    transform: scale(1.05); 
+} 
+
+
+.categorias { 
+    width: 200px; 
+    float:left; 
+    background: #222; 
+    color: white; 
+    min-height: 100vh; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    text-align: center; 
+} 
+
+
+.categorias h3 { 
+    margin-top: 0; 
+    text-align: center; 
+    border-bottom: 2px solid #e3a63b; 
+    padding-bottom: 10px; 
+} 
+
+
+.categorias ul { 
+    list-style: none; 
+    padding: 0; 
+    margin: 20px 0; 
+} 
+
+
+.categorias li { 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    background: #333; 
+    border-radius: 6px; 
+    cursor: pointer; 
+} 
+
+
+.categorias li:hover { 
+    background: #e3a63b; 
+    color: #222; 
+} 
+
+
+.pie {
+    background: #999;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+.copyright {
+    font-size: 14px;
+}
+
+
+.redes {
+    position: absolute;
+    right: 20px;
+}
+
+
+.redes img {
+    width: 40px;
+    margin-left: 10px;
+    vertical-align: middle;
+    transition: transform 0.3s;
+}
+
+
+.redes img:hover {
+    transform: scale(1.2);
+}
+
+
+.clear { 
+    clear: both; 
+}
